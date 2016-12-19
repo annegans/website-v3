@@ -1,0 +1,81 @@
+
+html body .section {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+   
+}
+
+* {
+    position: relative;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body .section .box {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+    padding: 12px;
+}
+
+
+
+
+html body .section.interfaces .box .carousel {
+    display: -webkit-flex;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 304px;
+    padding: 84px 0;
+}
+
+html body .section.interfaces .box .carousel li.next {
+    left: 80%;
+}
+
+li.prev {
+    left: 20%;
+}
+
+html body .section.interfaces .box .carousel li.active {
+    left: 50%;
+    z-index: 1;
+    opacity: 1;
+    -webkit-transform: translateX(-50%) scale(1.2, 1.2);
+    transform: translateX(-50%) scale(1.5, 1.5);
+}
+
+html body .section.interfaces .box .carousel li {
+    -webkit-flex: 1 1 240px;
+    flex: 1 1 240px;
+    position: absolute;
+    width: 240px;
+    padding: 12px;
+    cursor: pointer;
+    opacity: .8;
+    -webkit-transition: .25s;
+    transition: .25s;
+    -webkit-transform: translateX(-50%) scale(1, 1);
+    transform: translateX(-50%) scale(1, 1);
+}
+
+html body .section.interfaces .box .carousel li figure img {
+    display: block;
+    width: 100%;
+}
